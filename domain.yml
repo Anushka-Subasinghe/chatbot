@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - affirm
+  - decline
+  - jobType
+  - confirm
+  - cancel
+  - date
+
+actions:
+  - action_generate_dates  
+
+responses:
+  utter_affirm:
+  - text: "Please select job type"
+    buttons:
+      - title: "cleaner"
+        payload: 'jobType'
+      - title: "plumber"
+        payload: 'jobType'
+      - title: "electrician"
+        payload: 'jobType'
+      - title: "gardener"
+        payload: 'jobType'
+      - title: "painter"
+        payload: 'jobType'
+
+  utter_decline:
+  - text: "Goodbye"
+
+  utter_jobType:
+  - text: "Please select a date"
+
+  utter_date:
+  - text: "Do you want to confirm this job?"
+    buttons:
+      - title: "Confirm"
+        payload: 'confirm'
+      - title: "Cancel"
+        payload: 'cancel'
+
+  utter_confirm:
+  - text: "Job confirmed"
+
+  utter_cancel:
+  - text: "Job cancelled"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

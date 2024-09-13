@@ -1,0 +1,33 @@
+version: "3.1"
+
+nlu:
+- intent: affirm
+  examples: |
+    - Yes
+
+- intent: jobType
+  examples: |
+    - cleaner
+    - electrician
+    - painter
+    - gardener
+    - plumber
+
+- intent: date
+  examples: |
+    - 2023-10-22
+    - 2023-10-23
+    - 2023-10-24
+    - 2023-10-25
+
+- intent: decline
+  examples: |
+    - No  
+
+- intent: confirm
+  examples: |
+    - Confirm
+
+- intent: cancel
+  examples: |
+    - Cancel

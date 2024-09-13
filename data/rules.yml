@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: decline
+  - action: utter_decline
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: jobType
+  - action: action_generate_dates
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: date
+  - action: utter_date  
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: confirm
+  - action: utter_confirm
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: cancel
+  - action: utter_cancel   
